@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@serafort/core':
-        specifier: link:../Javascript
-        version: link:../Javascript
+        specifier: github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df
+        version: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df
     devDependencies:
       '@types/express':
         specifier: ^4.17.21
@@ -487,6 +487,10 @@ packages:
     resolution: {integrity: sha512-Erx822VRBwLa124shbj+wNXe//BOgMEctDV0m1aqTQdNO1S69DgNUCFKC1RCeZfixs1J31l6igk1ziyXErbigQ==}
     cpu: [x64]
     os: [win32]
+
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df':
+    resolution: {tarball: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df}
+    version: 0.1.0
 
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
@@ -1409,6 +1413,8 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.63.4':
     optional: true
+
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df': {}
 
   '@types/body-parser@1.19.6':
     dependencies:
