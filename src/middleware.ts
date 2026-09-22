@@ -70,9 +70,9 @@ export function serafortAuth(
         return next();
       }
 
-      const status = err instanceof AuthenticationError ? err.status : 401;
+      const status = err instanceof AuthenticationError ? (err as AuthenticationError).status : 401;
       const message = err instanceof Error ? err.message : 'Invalid authorization token';
-      const code = err instanceof AuthenticationError ? err.code : 'INVALID_TOKEN';
+      const code = err instanceof AuthenticationError ? (err as AuthenticationError).code : 'INVALID_TOKEN';
 
       res.status(status).json({
         status: 'error',
