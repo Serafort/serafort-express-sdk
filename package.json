@@ -21,7 +21,8 @@
   "scripts": {
     "build": "tsup",
     "type-check": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepare": "husky"
   },
   "dependencies": {
     "@serafort/core": "link:../Javascript"
@@ -33,6 +34,7 @@
     "@types/express": "^4.17.21",
     "@types/node": "^22.0.0",
     "express": "^4.21.2",
+    "husky": "^9.1.7",
     "tsup": "^8.3.5",
     "typescript": "^5.7.0",
     "vitest": "^2.1.0"
